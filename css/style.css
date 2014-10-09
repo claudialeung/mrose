@@ -1,0 +1,299 @@
+/* 
+Project Name: Michael ZT Rose
+Client: Michael Rose
+Author: Claudia Leung
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+     color: #000;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family:'Source Sans Pro', sans-serif;
+
+}
+
+
+
+header {
+     
+     height:80px;
+     background:white;
+     font-size: 20px;
+}
+
+nav {
+     display:none;
+}
+
+.mobile-nav li{
+     display: inline-block;
+     font-size: 18px;
+     padding-left: 3%;
+     margin-bottom: 10px;
+     margin-left: 2%;
+     background-color: white;
+     
+}
+
+
+div {
+     width: 300px;
+     height:300px;
+     float:left;
+     margin: 5%;
+}
+
+
+.mobile-nav {
+     width: 80%;
+     height: 25px;
+     margin: 0 auto;
+     background-color: white;
+    
+     }
+
+.index-visual {
+     width:40%;
+     background-image: url(../images/1.1.jpg);
+
+}
+
+ .index-audio {
+     width:40%;
+     background-image: url(../images/audio.png);
+}
+
+.one {
+     background-image: url(../images/1.1.jpg);
+     background-size: cover;
+}
+
+.two {
+     background-image: url(../images/2.1.jpg);
+     background-size: cover;
+}
+
+.three {
+     background-image: url(../images/3.jpg);
+     background-size: cover;
+}
+
+.fourth {
+     background-image: url(../images/4.jpg);
+     background-size: cover;
+}.fifth {
+     background-image: url(../images/5.jpg);
+     background-size: cover;
+}.sixth {
+     background-image: url(../images/6.jpg);
+     background-size: cover;
+}.seventh {
+     background-image: url(../images/7.jpg);
+     background-size: cover;
+}.eighth {
+     background-image: url(../images/8.jpg);
+     background-size: cover;
+}
+
+.ninth {
+     background-image: url(../images/9.jpg);
+     background-size: cover;
+}
+.tenth {
+     background-image: url(../images/10.jpg);
+     background-size: cover;
+}
+.eleventh {
+     background-image: url(../images/11.jpg);
+     background-size: cover;
+}
+.twelfth {
+     background-image: url(../images/12.jpg);
+     background-size: cover;
+}.thirteenth {
+     background-image: url(../images/13.jpg);
+     background-size: cover;
+}
+
+.contact, .about {
+     width:400px;
+     position: center;
+     margin-left: 10%;
+     padding-top: 200px;
+     background-color: white;
+
+}
+
+.audio {
+     width: 80%;
+     height:100px;
+     position:center;
+     margin: 10% 0 0 10%;
+
+}
+
+h1   {
+     text-align: center;
+     color: white;
+     padding-top: 150px;
+}
+footer {
+     width:100%;
+     height:50px;
+     font-size: 14px;
+     background:white;
+     text-align: center;
+     padding: 50px 0 50px 0;
+     clear:both;
+}
+
+/* css for responsive grid
+article {
+     width:100px;
+     float:left;
+     margin:2%;
+     height:100px;
+     background:purple;
+}
+
+footer {
+     clear:both;
+}
+*/
+
+
+@media (min-width: 600px) {
+
+     /* separate css selectors by comma */
+     /* float left to be on same line */
+     main, aside {
+          float:left;
+     }
+
+     img {
+          width: 400px;
+          margin-left: 0px;
+          position: top-left absolute;
+     }
+
+     nav {
+          display:inline-block;
+          float:right;
+          padding-top: 20px;
+          
+          
+     }
+
+     .mobile-nav {
+          display: none;
+     }
+
+     nav li {
+          display: inline-block;
+          font-size: 20px;
+          margin:0px 20px;
+     }
+
+     aside {
+          width:35%;
+     }
+
+     div {
+          width:19%;
+          float:left;
+          display: inline-block;
+          margin: 3%;
+          background-color: blue;
+
+     }
+
+     .index-visual {
+          position: center;
+          background-size: cover;
+          position: center center;
+
+     .contact, .about {
+          width: 60%;
+          position: center;
+          margin-left: 20%;
+     }
+
+     .audio {
+          margin: 10px 0px 10px 10%;
+          height:150px;
+     }
+     /* start under any floated elements */
+     footer {
+          clear:both;
+          margin-top: 500px;
+     }
+
+}
+/******************************************
+/* LAYOUT                   
+/*******************************************/
