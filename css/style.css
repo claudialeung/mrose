@@ -123,7 +123,7 @@ div {
 
 }
 
- .index-audio {
+.index-audio {
      width:40%;
      background-image: url(../images/audio.png);
 }
@@ -146,16 +146,24 @@ div {
 .fourth {
      background-image: url(../images/4.jpg);
      background-size: cover;
-}.fifth {
+}
+
+.fifth {
      background-image: url(../images/5.jpg);
      background-size: cover;
-}.sixth {
+}
+
+.sixth {
      background-image: url(../images/6.jpg);
      background-size: cover;
-}.seventh {
+}
+
+.seventh {
      background-image: url(../images/7.jpg);
      background-size: cover;
-}.eighth {
+}
+
+.eighth {
      background-image: url(../images/8.jpg);
      background-size: cover;
 }
@@ -164,10 +172,12 @@ div {
      background-image: url(../images/9.jpg);
      background-size: cover;
 }
+
 .tenth {
      background-image: url(../images/10.jpg);
      background-size: cover;
 }
+
 .eleventh {
      background-image: url(../images/11.jpg);
      background-size: cover;
@@ -175,10 +185,38 @@ div {
 .twelfth {
      background-image: url(../images/12.jpg);
      background-size: cover;
-}.thirteenth {
+}
+
+.thirteenth {
      background-image: url(../images/13.jpg);
      background-size: cover;
 }
+
+.fourteenth {
+     background-image: url(../images/14.jpg);
+     background-size: cover;
+}
+
+.fifteenth {
+     background-image: url(../images/15.jpg);
+     background-size: cover;
+}
+
+.sixteenth {
+     background-image: url(../images/16.jpg);
+     background-size: cover;
+}
+
+.seventeenth {
+     background-image: url(../images/17.jpg);
+     background-size: cover;
+}
+
+.eighteenth {
+     background-image: url(../images/18.jpg);
+     background-size: cover;
+}
+
 
 .contact, .about {
      width:400px;
