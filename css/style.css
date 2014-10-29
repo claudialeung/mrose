@@ -107,7 +107,8 @@ div {
      float:left;
      margin: 5%;
      background: white;
-}
+     
+     }
 
 
 .mobile-nav {
@@ -121,6 +122,7 @@ div {
 .index-visual {
      width:40%;
      background-image: url(../images/1.1.jpg);
+     margin: 5%;
 
 }
 
@@ -128,6 +130,7 @@ div {
      width:40%;
      background-image: url(../images/audio.png);
      background-size: cover;
+     margin: 5%;
 }
 
 .one {
@@ -215,9 +218,39 @@ div {
 }
 
 .eighteenth {
-     background-image: url(../images/18.jpg);
-     background-size: cover;
+     background-image: url(../images/18.1.jpg);
+
 }
+
+.nineteenth {
+     background-image: url(../images/19.2.jpg);
+
+}
+
+.twenty {
+     background-image: url(../images/20.2.jpg);
+
+}
+.twentyone {
+     background-image: url(../images/21.3.jpg);
+
+}
+
+.twentytwo {
+     background-image: url(../images/22.1.jpg);
+
+}
+
+.twentythree {
+     background-image: url(../images/23.1.jpg);
+
+}
+
+.twentyfour {
+     background-image: url(../images/24.2.jpg);
+
+}
+
 
 
 .contact, .about {
@@ -237,6 +270,22 @@ div {
      margin: 5% 0 0 10%;
 
 }
+
+.Com1 {
+     background-image: url(../images/C1.jpg);
+     background-size: cover;
+}
+
+.Com2 {
+     background-image: url(../images/C2.jpg);
+     background-size: cover;
+}
+
+.Com3 {
+     background-image: url(../images/C3.jpg);
+     background-size: cover;
+}
+
 
 h1   {
      text-align: center;
@@ -260,6 +309,8 @@ footer {
      padding: 50px 0 50px 0;
      clear:both;
 }
+
+
 
 /* css for responsive grid
 article {
