@@ -126,6 +126,7 @@ div {
 .index-audio {
      width:40%;
      background-image: url(../images/audio.png);
+     background-size: cover;
 }
 
 .one {
