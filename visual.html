@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
 
 	</head>
 	<body>
@@ -21,9 +23,8 @@
 			<nav>
 				
 				<ul>
-					<li><a href="visual.html">Visual Art</a></li>
+					<li><a href="visual_index.html">Visual</a></li>
 					<li><a href="audio.html">Audio</a></li>
-					<li><a href="commissioned.html">Commissions</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -31,9 +32,8 @@
 
 			<div class="mobile-nav">
 				<ul>
-					<li><a href="visual.html">Visual Art</a></li>
+					<li><a href="visual_index.html">Visual</a></li>
 					<li><a href="audio.html">Audio</a></li>
-					<li><a href="commissioned.html">Commissions</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -41,132 +41,164 @@
 			</div>
 		</header>
 
+		<div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/1.jpg" />
+    </li>
+    <li>
+      <img src="images/2.jpg" />
+    </li>
+    <li>
+      <img src="images/3.jpg" />
+    </li>
+    <li>
+      <img src="images/4.jpg" />
+    </li>
+    <li>
+      <img src="images/5.jpg" />
+    </li>
+     <li>
+      <img src="images/6.jpg" />
+    </li>
+     <li>
+      <img src="images/19.jpg" />
+    </li>
+    <li>
+      <img src="images/7.jpg" />
+    </li>
+    <li>
+      <img src="images/8.jpg" />
+    </li>
+    <li>
+      <img src="images/9.jpg" />
+    </li>
+    <li>
+      <img src="images/10.jpg" />
+    </li>
+    <li>
+      <img src="images/11.jpg" />
+    </li>
+    <li>
+      <img src="images/12.jpg" />
+    </li>
+    <li>
+      <img src="images/13.jpg" />
+    </li>
+    <li>
+      <img src="images/14.jpg" />
+    </li>
+    <li>
+      <img src="images/15.jpg" />
+    </li>
+    <li>
+      <img src="images/18.jpg" />
+    </li>
+    <li>
+      <img src="images/16.jpg" />
+    </li>
+    <li>
+      <img src="images/17.jpg" />
+    </li>
+  </ul>
+</div>
+
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+     <li>
+      <img src="images/1.1.jpg" />
+    </li>
+    <li>
+      <img src="images/2.1.jpg" />
+    </li>
+    <li>
+      <img src="images/3.1.jpg" />
+    </li>
+    <li>
+      <img src="images/4.1.jpg" />
+    </li>
+    <li>
+      <img src="images/5.1.jpg" />
+    </li>
+     <li>
+      <img src="images/6.1.jpg" />
+    </li>
+     <li>
+      <img src="images/19.1.jpg" />
+    </li>
+    <li>
+      <img src="images/7.1.jpg" />
+    </li>
+    <li>
+      <img src="images/8.1.jpg" />
+    </li>
+    <li>
+      <img src="images/9.1.jpg" />
+    </li>
+    <li>
+      <img src="images/10.1.jpg" />
+    </li>
+    <li>
+      <img src="images/11.1.jpg" />
+    </li>
+    <li>
+      <img src="images/12.1.jpg" />
+    </li>
+    <li>
+      <img src="images/13.1.jpg" />
+    </li>
+    <li>
+      <img src="images/14.1.jpg" />
+    </li>
+    <li>
+      <img src="images/15.1.jpg" />
+    </li>
+    <li>
+      <img src="images/18.1.jpg" />
+    </li>
+    <li>
+      <img src="images/16.1.jpg" />
+    </li>
+    <li>
+      <img src="images/17.1.jpg" />
+    </li>
+  </ul>
+</div>
 		
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+   $(window).load(function() {
+ 
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  </script>
 
 
-		<div class="one">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
 
-		<div class="two">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-		<div class="three">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-		<div class="fourth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-		<div class="fifth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-		<div class="sixth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-		<div class="seventh">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-
-		<div class="eighth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		</a>
-		</div>
-
-
-		<div class="ninth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-
-		<div class="tenth">
-			<a href="*needs a link here*" id="one">MICHAELZTROSEMICHAELZTROSEMICHAELZTROSE
-		
-		</a>
-		</div>
-
-
-		<div class="eleventh">
-		</div>
-		<div class="twelfth">
-		</div>
-		<div class="thirteenth">
-		</div>
-		<div class="fourteenth">
-		</div>
-		<div class="fifteenth">
-		</div>
-		<div class="sixteenth">
-		</div>
-		<div class="seventeenth">
-		</div>
-		<div class="eighteenth">
-		</div>
-		<div class="nineteenth">
-		</div>
-		<div class="twenty">
-		</div>
-		<div class="twentyone">
-		</div>
-		<div class="twentythree">
-		</div>
-		<div class="twentyfour">
-		</div>
-		<div class="twentyfive">
-		</div>
-		<div class="twentysix">
-		</div>
-		<div class="twentyseven">
-		</div>
-		<div class="twentyeight">
-		</div>
-		<div class="thirty">
-		</div>
-		<div class="thirtyone">
-		</div>
-		<div class="thirtytwo">
-		</div>
-		<div class="thirtythree">
-		</div>
-		<div class="thirtyfour">
-		</div>
-		<div class="thirtyfive">
-		</div>
-		<div class="thirtysix">
-		</div>
-		<div class="thirtyseven">
-		</div>
-		<div class="thirtyeight">
-		</div>
-
-
-		<footer>
-			&copy; 2014 developed by Claudia Leung 
-		</footer>
-
-		<!-- javascript -->
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/main.js"></script>
 	</body>
 </html>

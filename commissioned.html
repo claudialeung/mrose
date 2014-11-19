@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+
 
 	</head>
 	<body>
@@ -21,9 +24,8 @@
 			<nav>
 				
 				<ul>
-					<li><a href="visual.html">Visual Art</a></li>
+					<li><a href="visual_index.html">Visual Art</a></li>
 					<li><a href="audio.html">Audio</a></li>
-					<li><a href="commissioned.html">Commissions</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -31,9 +33,8 @@
 
 			<div class="mobile-nav">
 				<ul>
-					<li><a href="visual.html">Visual Art</a></li>
+					<li><a href="visual_index.html">Visual Art</a></li>
 					<li><a href="audio.html">Audio</a></li>
-					<li><a href="commissioned.html">Commissions</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -41,29 +42,95 @@
 			</div>
 		</header>
 
-	
-		<div>
-			<h2>Commissioned Work</h2>
-		</div>
+	<div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/C1.jpg" />
+    </li>
+    <li>
+      <img src="images/C2.jpg" />
+    </li>
+    <li>
+      <img src="images/C3.jpg" />
+    </li>
+    <li>
+      <img src="images/C4.jpg" />
+    </li>
+    <li>
+      <img src="images/C5.jpg" />
+    </li>
+     <li>
+      <img src="images/C6.jpg" />
+    </li>
+    <li>
+      <img src="images/C7.jpg" />
+    </li>
+   
+  </ul>
+</div>
 
-		<div class="Com1">
-		</div>
-
-		<div class="Com2">
-		</div>
-
-		<div class="Com3">
-		</div>
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+     <li>
+      <img src="images/C1.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C2.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C3.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C4.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C5.1.jpg" />
+    </li>
+     <li>
+      <img src="images/C6.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C7.1.jpg" />
+    </li>
+     
+     
+  </ul>
+</div>
 		
-		
-	
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
-		<footer>
-			&copy; 2014 developed by Claudia Leung 
-		</footer>
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
 
-		<!-- javascript -->
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+   $(window).load(function() {
+ 
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  </script>
+
+
+
 	</body>
 </html>
