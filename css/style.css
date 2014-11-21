@@ -201,7 +201,7 @@ div {
      height:100px;
      position:center;
      background: white;
-     margin: 5% 0 0 10%;
+     margin: 2% 0 0 10%;
 
 }
 
@@ -231,6 +231,13 @@ h2   {
      text-align: left;
      color: gray;
      margin-bottom: 20px;
+}
+
+h3   {
+     text-align: left;
+     color:black;
+     font-size: 36px;
+     padding-left: 10%;
 }
 
 
@@ -328,7 +335,7 @@ footer {
 
      .audio {
 
-          margin: 10px 0px 10px 10%;
+          padding: 3%;
           height:150px;
      }
      /* start under any floated elements */
