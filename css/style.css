@@ -158,6 +158,11 @@ div {
 
 }
 
+.flex-caption {
+     text-align: center;
+     
+}
+
 .index-audio {
      width:40%;
      height:350px;
