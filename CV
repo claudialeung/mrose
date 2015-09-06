@@ -5,7 +5,7 @@
     	<meta name="Michael ZT Rose" content="Michael ZT Rose">
     	<meta name="keywords" content="painter, artist, Michael Rose">
 	
-		<title>Michael ZT Rose</title>
+		<title>About MZTR</title>
 		
 		<!-- external CSS link -->
 
@@ -39,20 +39,9 @@
 			</div>
 		</header>
 
-		<div class="index-visual">
-			<a href="visual_index.html" style="display: block; height: 100%">
-			<h1>Visual</h1>
-			</a>
-		</div>
-
-		<div class="index-audio">
-			<a href="audio.html" style="display: block; height: 100%">
-			<h1>Audio</h1>
-			</a>
-		</div>
 	
-
-
+		
+		
 		<!-- javascript -->
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="js/main.js"></script>
